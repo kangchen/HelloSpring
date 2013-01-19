@@ -1,10 +1,11 @@
 package com.kcorner.spring.sort;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class DataList {
 	
-	private ArrayList<Integer> item = new ArrayList<Integer> ();
+	private List<Integer> item = new ArrayList<Integer> ();
     private int size = 0;
     private int maxInt = 0;
 	
@@ -28,11 +29,11 @@ public class DataList {
 		return maxInt;
 	}
 
-	public ArrayList<Integer> getItem() {
+	public List<Integer> getItem() {
 		return item;
 	}
 
-	public void setItem(ArrayList<Integer> item) {
+	public void setItem(List<Integer> item) {
 		this.item = item;
 	}
 		

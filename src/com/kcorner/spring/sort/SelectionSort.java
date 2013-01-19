@@ -2,7 +2,7 @@ package com.kcorner.spring.sort;
 
 import org.springframework.beans.factory.annotation.Required;
 
-public class SelectionSort implements Runnable, Sort {
+public final class SelectionSort implements Runnable, Sort {
 		
 	private DataList datalist;
 	private long time = 0;

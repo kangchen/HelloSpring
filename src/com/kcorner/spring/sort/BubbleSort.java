@@ -2,7 +2,7 @@ package com.kcorner.spring.sort;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class BubbleSort implements Runnable, Sort {
+public final class BubbleSort implements Runnable, Sort {
 	
 	private DataList datalist;
 	private long time = 0;
