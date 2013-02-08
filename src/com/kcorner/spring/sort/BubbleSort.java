@@ -70,7 +70,6 @@ public final class BubbleSort implements Runnable, Sort {
 
 	@Override  //Runnable
 	public void run() {
-		// TODO Auto-generated method stub
 		sort();		
 	}  
 //	

@@ -8,12 +8,14 @@
 		http://www.springframework.org/schema/context/spring-context-3.0.xsd"
 		default-init-method="init" default-destroy-method="clean">
   
-  <bean id="bubbleSort" class="com.kcorner.spring.sort.BubbleSort" >
-  	<property name="datalist" ref="datalist"/>
+  <bean id="SortApp" class="com.kcorner.spring.sort.SortApp">
+      <constructor-arg index="0" value="bubbleSort"/>    
   </bean>
+       
+  <bean id="bubbleSort" class="com.kcorner.spring.sort.BubbleSort"  autowire="byName" />
       
   		  <bean id="datalist" class="com.kcorner.spring.sort.DataList">
-		    <constructor-arg index="0" value="10"/>
+		    <constructor-arg index="0" value="12"/>
 		    <constructor-arg index="1" value="50"/>
 		  </bean>
   
@@ -23,8 +25,8 @@
   </bean> 
   
   		  <bean id="data-02" class="com.kcorner.spring.sort.DataList">
-		    <constructor-arg index="0" value="15"/>
-		    <constructor-arg index="1" value="50"/>
+		    <constructor-arg index="0" value="20"/>
+		    <constructor-arg index="1" value="99"/>
 		  </bean>
 
   <context:annotation-config/> 

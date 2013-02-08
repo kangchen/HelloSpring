@@ -6,6 +6,8 @@
 .umlproject
 *.prefs
 /bin
+.reverse.properties
+*.uml*
 
 # Compiled source #
 ###################
